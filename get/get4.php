@@ -11,10 +11,10 @@ curl_exec($ch);
  
 $response = curl_exec($ch);
 
-echo str_replace("http","https",$response);
+//echo str_replace("http","https",$response);
 
 preg_match_all('/^Location:(.*)$/mi', $response, $matches);
 curl_close($ch);
 
-//echo !empty($matches[1]) ? trim($matches[1][0]) : 'No redirect found';
+echo !empty($matches[1]) ? trim($matches[1][0]) : 'No redirect found';
 ?>
