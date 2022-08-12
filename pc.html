@@ -11,14 +11,12 @@
 <meta charset="UTF-8">
 <meta name="google" value="notranslate">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
-<meta name=author content="Jmw-Power`top|JmwPower">
+<meta name=author content="XJJ | NetSec">
 <meta name=description content="XJJ|小姐姐 优质短视频播放小站，仿短视频App播放操作模式，网页版无需安装APP，即开即用，可登录收藏你所喜欢的小姐姐视频！温馨提示：本页面仅供学习参考，请勿分享传播商用.">
 <meta name=keywords content="xiaojiejie, xjj, 小姐姐, 抖音, 快手, 福利">
-<title>Videos-|-小姐姐</title>
+<title> XJJ - 小姐姐 Videos</title>
 <link rel="stylesheet" type="text/css" href="./css/pc.css">
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
-<link rev="made" href="https://github.com/JMWpower/xiaojiejie">
-<link rev="made" href="https://gitee.com/JmwPower/xiaojiejie">
 	
 	
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5660349373091698" crossorigin="anonymous"></script>
@@ -47,7 +45,7 @@ var _hmt = _hmt || [];
 		<div class="box">
 			<div style="padding-top:10px;padding-left:40px;background-color: #0E0F1A;">
 				<img src="./img/logo.png" style="border-radius:20px;width:32px;height:32px;background-color: #fff;">
-			    <span style="color:#fff;padding-left:12px;font-size:16px;background-color: #0E0F1A;" id="userid">@Jmw`Power</span>
+			    <span style="color:#fff;padding-left:12px;font-size:16px;background-color: #0E0F1A;" id="userid">@NetSec</span>
 			</div>
 			<div style="padding-top:15px;padding-left:20px;padding-right:20px;background-color: #0E0F1A;">
 			    <span style="color:#fff;color: #999999;background-color: #0E0F1A;">本程序仅作研究学习演示，视频采集自网络!</span>
@@ -234,7 +232,7 @@ $(document).ready(function(){
 	    	$('.login-bg').show();
 		} else {
 			$.removeCookie('user'); //删除cookie
-			$("#userid").html("@Jmw-Power");
+			$("#userid").html("@NetSec");
 			$("#username").val("");
 		}
     });
@@ -259,7 +257,7 @@ $(document).ready(function(){
 				this.innerText = "当前源【收藏】";
 				url = ("./get/get.php?user=" + user);
 			} else {
-				$("#userid").html('@Jmw-Power');
+				$("#userid").html('@NetSec');
 				gi = 1;
 	    		this.innerText = "当前源【精品】";
 	    		url = "./get/get" + gi + ".php";
@@ -345,7 +343,7 @@ $(document).ready(function(){
 	if (user != null) {
 		$("#userid").html('@'+user);
 	} else {
-		$("#userid").html('@Jmw-Power');
+		$("#userid").html('@NetSec');
 	}
 });
 
