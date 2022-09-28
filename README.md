@@ -1,4 +1,4 @@
-# MM - Dancing Girls
+# XJJ - Dancing Girls
 
 
 
@@ -8,12 +8,12 @@
 
 ------------
 
-## MM -
+## XJJ -
 
 ------------
 
 # Demo
-<http://mm.51sec.org>
+<http://xjj.51sec.org>
 
 ------------
 
