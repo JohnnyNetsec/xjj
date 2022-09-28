@@ -1,4 +1,4 @@
-# XJJ - Dancing Girls
+# XJJ - Dancing Girls TikTok Style Video Site
 
 Source Code for video player pages which is trying to make you to watch those girl dancing video simpler and easier over the Internet. 
 
