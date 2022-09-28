@@ -12,9 +12,9 @@
 <meta name="google" value="notranslate">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 <meta name=author content="XJJ | NetSec">
-<meta name=description content="XJJ|小姐姐 优质短视频播放小站，仿短视频App播放操作模式，网页版无需安装APP，即开即用，可登录收藏你所喜欢的小姐姐视频！温馨提示：本页面仅供学习参考，请勿分享传播商用.">
-<meta name=keywords content="xiaojiejie, xjj, 小姐姐, 抖音, 快手, 福利">
-<title> XJJ - 小姐姐 Videos</title>
+<meta name=description content="XJJ| Web Page to Play dancing girl videos.">
+<meta name=keywords content="xiaojiejie, xjj">
+<title> XJJ - Girl Dancing Videos</title>
 <link rel="stylesheet" type="text/css" href="./css/pc.css">
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 	
@@ -36,7 +36,7 @@ var _hmt = _hmt || [];
 </script>
 <body>
 	<span style="position:absolute;top:15px;left:8vw;color:#fff;font-size:16px;">
-		<strong style="font-size:18px;">XJJ - xiaojiejie</strong>   | 发现生活中的美
+		<strong style="font-size:18px;">XJJ - xiaojiejie</strong>   | Dancing Girl Videos and Musics
 	</span>
 	<div class="app">
 		<div>
@@ -48,20 +48,20 @@ var _hmt = _hmt || [];
 			    <span style="color:#fff;padding-left:12px;font-size:16px;background-color: #0E0F1A;" id="userid">@NetSec</span>
 			</div>
 			<div style="padding-top:15px;padding-left:20px;padding-right:20px;background-color: #0E0F1A;">
-			    <span style="color:#fff;color: #999999;background-color: #0E0F1A;">本程序仅作研究学习演示，视频采集自网络!</span>
+			    <span style="color:#fff;color: #999999;background-color: #0E0F1A;">Only for studying and researching</span>
 			</div>
 			<div style="padding-top: 15px;padding-left: 40px;padding-right:40px;background-color: #0E0F1A;text-align: center;font-size:14px;">
-				<span style="color: #FF4040;background-color: #0E0F1A;">点击来源切换数据源</span><br>
-			    <span style="color: #4682B4;background-color: #0E0F1A;">点击爱心按钮收藏</span>
+				<span style="color: #FF4040;background-color: #0E0F1A;">Switch Sources/span><br>
+			    <span style="color: #4682B4;background-color: #0E0F1A;">click heart to love it</span>
 			</div>
 			<div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
-				<span style="color:#fff;background-color: #0E0F1A;">点击按钮选择【连续】/【循环】模式</span><br>
-				<span style="color:#fff;background-color: #0E0F1A;">点击【PASS】按钮刷新播放下一个</span><br>
-			    <span style="color:#fff;background-color: #0E0F1A;">单击视频 播放/暂停</span><br>
-			    <span style="color:#fff;background-color: #0E0F1A;">双击视频进入 全屏播放</span><br>
+				<span style="color:#fff;background-color: #0E0F1A;">Toggle【Next】/【Loop】</span><br>
+				<span style="color:#fff;background-color: #0E0F1A;">Click【PASS】for Next/span><br>
+			    <span style="color:#fff;background-color: #0E0F1A;">Click Video Play/Pause</span><br>
+			    <span style="color:#fff;background-color: #0E0F1A;">Double Clicks Full Screen/span><br>
 			</div>
 			<div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
-				<button id="bth" class="xhms">单视频循环播放</button>
+				<button id="bth" class="xhms">Play Single Video</button>
 			</div>
 			<div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
 				<button class="pass" onclick="players();">PASS</button>
@@ -70,10 +70,10 @@ var _hmt = _hmt || [];
 				<img src="./img/love.png" id="love" style="background-color: #0E0F1A;border-radius:10px;width:38px;height:38px;" title="点击喜欢按钮收藏">
 			</div>
 			<div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
-				<button id="yuan">当前数据源【精品】</button>
+				<button id="yuan">Local Source【Favourites】</button>
 			</div>
 		    <div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
-		    	<span style="color:#fff;">扫描下方二维码.使用手机播放</span><br>
+		    	<span style="color:#fff;">Scan QR Code on Mobil</span><br>
 				<img src="./img/ewm.png" style="width:88px;height:88px;"><br>
 				<strong style="color:#fff;">http://xjj.51sec.org/</strong>
 			</div>
@@ -141,7 +141,7 @@ var _hmt = _hmt || [];
   </a>
 </center>
 		<div style="text-align: center;color:#fff;">
-			<strong>本程序仅作研究学习演示，数据采集自网络;原作者拍摄创作不易，请勿下载传播!</strong>
+			<strong>Only for studying and researching</strong>
 		</div>
 		
 
@@ -203,7 +203,7 @@ $(document).ready(function(){
  
     $("#bth").on("click", function(){
         auto = !auto;
-        this.innerText = (auto ? '自动连续播放下一个' : '单视频循环播放');
+        this.innerText = (auto ? 'Auto Next' : 'Loop');
         this.className = (auto ? 'zdlb' : 'xhms');
     });
 
@@ -245,21 +245,21 @@ $(document).ready(function(){
     $("#yuan").on("click", function(){
     	if (gi < gi_max) {
     		gi = gi + 1;
-    		this.innerText = "当前源【00" + gi + "】";
-    		if (gi>9) {this.innerText = "当前源【0" + gi + "】";}//大于9，缺省0
-    		if (gi==2) {this.innerText = "当前源【JSON】";}
+    		this.innerText = "Source【00" + gi + "】";
+    		if (gi>9) {this.innerText = "Source【0" + gi + "】";}//大于9，缺省0
+    		if (gi==2) {this.innerText = "Source【JSON】";}
     		url = "./get/get" + gi + ".php";
     	} else if (gi = gi_max) {
 			var user = $.cookie('user');
 			if (user != null) {
 				gi = 0;
 				$("#userid").html('@'+user);
-				this.innerText = "当前源【收藏】";
+				this.innerText = "Source【Favorite】";
 				url = ("./get/get.php?user=" + user);
 			} else {
 				$("#userid").html('@NetSec');
 				gi = 1;
-	    		this.innerText = "当前源【精品】";
+	    		this.innerText = "Source【Top】";
 	    		url = "./get/get" + gi + ".php";
 			}
     	}
