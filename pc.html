@@ -55,13 +55,13 @@ var _hmt = _hmt || [];
 			    <span style="color: #4682B4;background-color: #0E0F1A;">click heart to love it</span>
 			</div>
 			<div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
-				<span style="color:#fff;background-color: #0E0F1A;">Toggle【Next】/【Loop】</span><br>
+				<span style="color:#fff;background-color: #0E0F1A;">Toggle【Single】/【Loop】</span><br>
 				<span style="color:#fff;background-color: #0E0F1A;">Click【PASS】for Next/span><br>
-			    <span style="color:#fff;background-color: #0E0F1A;">Click Video Play/Pause</span><br>
-			    <span style="color:#fff;background-color: #0E0F1A;">Double Clicks Full Screen/span><br>
+			    <span style="color:#fff;background-color: #0E0F1A;">Click Video to Play/Pause</span><br>
+			    <span style="color:#fff;background-color: #0E0F1A;">Double Click Full Screen</span><br>
 			</div>
 			<div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
-				<button id="bth" class="xhms">Play Single Video</button>
+				<button id="bth" class="xhms">Single</button>
 			</div>
 			<div style="padding-top: 15px;padding-left: 20px;padding-right:20px;background-color: #0E0F1A;text-align: center;">
 				<button class="pass" onclick="players();">PASS</button>
@@ -83,10 +83,6 @@ var _hmt = _hmt || [];
 
 		
 <center> 
-		<script src="https://apis.google.com/js/platform.js"></script>
-		<div class="g-ytsubscribe" data-channelid="UCPzmia0KbQlmhYuh5r7kWtA" data-layout="full" data-count="default"></div>
-		
-	
   <a
     href="https://sites.51sec.org"
     style="margin-left: 1em; margin-right: 1em;"
@@ -139,9 +135,12 @@ var _hmt = _hmt || [];
       width="50"
     />
   </a>
+		<script src="https://apis.google.com/js/platform.js"></script>
+		<div class="g-ytsubscribe" data-channelid="UCPzmia0KbQlmhYuh5r7kWtA" data-layout="full" data-count="default"></div>
 </center>
+		
 		<div style="text-align: center;color:#fff;">
-			<strong>Only for studying and researching</strong>
+			<strong>51Sec.Org</strong>
 		</div>
 		
 
@@ -203,7 +202,7 @@ $(document).ready(function(){
  
     $("#bth").on("click", function(){
         auto = !auto;
-        this.innerText = (auto ? 'Auto Next' : 'Loop');
+        this.innerText = (auto ? 'Single' : 'Loop');
         this.className = (auto ? 'zdlb' : 'xhms');
     });
 
@@ -318,7 +317,7 @@ function players() {
     			}});
             }
         } else {
-            console.log("失败，重新发起请求！");
+            console.log("Failed, request again！");
             players();
         }
     });
@@ -350,7 +349,7 @@ $(document).ready(function(){
 $("#login").on("click", function(){
 	var usernames = document.getElementById('username').value;
     if (usernames.replace(/(^\s*)|(\s*$)/g, "") == "") {  //----判断是否为空或者空格---
-        alert("请注意，账号内容不能为空！");
+        alert("Attention: Account can't be empty！");
         username.focus();
         return;//------如果为空，阻止函数继续往下执行----
     } else {
