@@ -6,18 +6,18 @@
 	以上信息使用时请保留，谢谢！Thanks♪(･ω･)ﾉ
 -->
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="google" value="notranslate">
 <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
 <meta name=author content="XJJ">
-<meta name=description content="XJJ top|小姐姐 优质短视频播放小站，仿短视频App播放操作模式，网页版无需安装APP，即开即用，可登录收藏你所喜欢的小姐姐视频！">
-<meta name=keywords content="xiaojiejie, xjj, 小姐姐, 抖音, 快手, 福利">
+<meta name=description content="XJJ | Dancing Girls">
+<meta name=keywords content="xiaojiejie, xjj">
 <link rel="icon" type="image/x-icon" href="favicon.ico" />
 <link rev="made" href="https://github.com/JMWpower/xiaojiejie">
 <link rev="made" href="https://gitee.com/JmwPower/xiaojiejie">
-<title>Videos-|-小姐姐</title>
+<title>Videos-|-XJJ</title>
 <script type="text/javascript">
 	if(!/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) { window.location.href = "pc.html"; }//不是移动设备，跳转
 </script>
@@ -85,7 +85,7 @@ video::-webkit-media-controls-panel {
     </div>
 
     <div id="msgs">
-        <span style="position:absolute;top:50px;left:10px;color:#fff;font-size:10px;">点击按钮选择【连续】/【循环】模式</span>
+        <span style="position:absolute;top:50px;left:10px;color:#fff;font-size:10px;">Toggle【Auto】/【Loop】</span>
         <span style="position:absolute;top:65px;left:10px;color:#fff;font-size:10px;">屏幕右滑显示提示文字</span>
         <span style="position:absolute;top:80px;left:10px;color:#fff;font-size:10px;">屏幕左滑隐藏提示文字</span>
         <span style="position:absolute;top:95px;left:10px;color:#fff;font-size:10px;">屏幕上滑切换下一个</span>
@@ -98,15 +98,15 @@ video::-webkit-media-controls-panel {
 
     <div id="texts" style="color:#ffffff;">
         <span style="position:absolute;bottom:42px;left:10px;;font-size:1.25rem;" id="userid">@Jmw`Power</span>
-        <span style="position:absolute;bottom:5px;left:10px;font-size:9px;">本程序仅作研究学习演示，数据采集自网络<br>原作者拍摄创作不易，请勿下载传播<br><span style="color:red;font-size:6px;" id="msg">JMW-|-正在努力加载环境中，请稍候！</span></span>
+        <span style="position:absolute;bottom:5px;left:10px;font-size:9px;">51sec.org<br> http://xjj.51sec.org<br><span style="color:red;font-size:6px;" id="msg">JMW-|-正在努力加载环境中，请稍候！</span></span>
     </div>
 
     <span style="position:absolute;top:5px;right:10px;font-family:electronicFont;color:#fff;font-size:1.2rem;" id="time">00:00:00</span>
 
     <div id="buttons" style="position:absolute;bottom:150px;right:10px;z-index:999">
-        <button id="auto_btn" style="border-radius:20px;width:32px;height:32px;">循环</button>
+        <button id="auto_btn" style="border-radius:20px;width:32px;height:32px;">Loop</button>
         <br><br><br>
-        <button id="yuan" style="border-radius:20px;width:48px;height:32px;">换源</button>
+        <button id="yuan" style="border-radius:20px;width:48px;height:32px;">Change Source</button>
         <br><br><br>
         <button style="border-radius:20px;width:48px;height:32px;" onclick="pass();">PASS</button>
         <br><br><br>
@@ -158,7 +158,7 @@ $(document).ready(function(){
 //播放模式选择
 $("#auto_btn").on("click", function(){
     auto = !auto;console.log(auto);
-    this.innerText = (auto ? '连播' : '循环');
+    this.innerText = (auto ? 'Auto' : 'Loop');
 });
 //收藏按钮事件
 $("#love_btn").on("click", function(){
