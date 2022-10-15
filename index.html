@@ -125,7 +125,7 @@ $(document).ready(function(){
     auto = false;//循环播放模式
     textstf = true;//用户信息显示状态
     gi = 1;//初始化GET链接序号
-    gi_max = 3;//最大GET链接序号
+    gi_max = 4;//最大GET链接序号
     vdnum = 0;//初始化GET链接数量
     url = "./get/get1.php";
     vdurlold = new Array("demo.mp4");
@@ -193,8 +193,8 @@ $("#yuan").on("click", function(){
 	if (gi < gi_max) {//小于最大链接序号，持续增加序号值
 		gi++;
 		this.innerText = "源00" + gi;//置播放源名称
-		if (gi>9) {this.innerText = "源0" + gi;}//大于9，缺省0
-        if (gi==2) {this.innerText = "JSON源";}//自定义名称
+		if (gi>9) {this.innerText = "Source0" + gi;}//大于9，缺省0
+        if (gi==2) {this.innerText = "JSON";}//自定义名称
         if (user != null) {//登录状态,添加USER信息鉴权
 			url = "./get/get" + gi + ".php?user=" + user;
 		} else {//非登录状态
@@ -206,7 +206,7 @@ $("#yuan").on("click", function(){
 			this.innerText = "收藏";
 		} else {//非登录状态，显示推荐源
 			gi = 1;url = "./get/get" + gi + ".php";
-    		this.innerText = "精品源";
+    		this.innerText = "Source01";
 		}
 	}
 });
