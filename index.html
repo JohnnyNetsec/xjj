@@ -132,8 +132,8 @@ $(document).ready(function(){
     vdurl_arr = new Array("demo.mp4");
     player = document.getElementById("player");
     players();
-    layer.msg('页面加载完毕，点击屏幕开始播放！', {
-	    btn: ['进入全屏', '就这样看'],yes:function(){
+    layer.msg('Load media, click to start playing', {
+	    btn: ['Enter fullscreen', '就这样看'],yes:function(){
 	    	toggleFullScreen();layer.closeAll();player.play();
 	    }
 	});
@@ -226,7 +226,7 @@ function players() {
 			console.log(vdurlold);
 		}
 	}
-	layer.msg('正在努力加载中···', {icon: 16,shadeClose: true,});
+	layer.msg('Working hard to load data···', {icon: 16,shadeClose: true,});
     if (vdnum != 0) {
         $("#logo_img").hide();
         $("#msgs").hide();
@@ -235,7 +235,7 @@ function players() {
     vdnum++;
     $.get(url,function(vdurl_data,status){
         if (status==status) {
-            $("#msg").html("成功获取数据，正在加载中，请稍候！");
+            $("#msg").html("Data load completed. Playing!");
             vdurl = vdurl_data;
             player.src = vdurl;
             console.log(vdurl);
@@ -245,15 +245,15 @@ function players() {
             	$("#love_btn").attr('src','./img/love.png');
             }
             if (vdurl_arr.indexOf(vdurl) >= 1) {//相同播放链接,重新加载
-            	$("#msg").html("相同播放链接,正在重新加载，请稍候！");
-            	layer.msg('相同播放链接,正在重新加载，请稍候！', {icon: 16,shadeClose: true,});
+            	$("#msg").html("Same media link,reloading!");
+            	layer.msg('Same media link,reloading!', {icon: 16,shadeClose: true,});
 				pass();
             	return;
 			}
 			console.log(vdurl_arr.indexOf(vdurl));
             player.onstalled = function() {//媒体数据不可用,重新加载
-            	$("#msg").html("媒体数据通信失败,正在重新加载，请稍候！");
-            	layer.msg('媒体数据通信失败,正在重新加载，请稍候！', {icon: 16,shadeClose: true,});
+            	$("#msg").html("Source media failed to reach, reloading!");
+            	layer.msg('Failed to reach source media, reloading!', {icon: 16,shadeClose: true,});
             	pass();
             	return;
 			};
@@ -267,15 +267,15 @@ function players() {
                     $("#texts").hide();
                 }
                 $("#love_btn").hide();
-                $("#msg").html("数据正常加载完毕，执行播放事件中！");
+                $("#msg").html("Data load completed. Playing!");
 	            player.play();
 	            vdurl_arr.unshift(vdurl);
 	            console.log(vdurl_arr);
             }else{
             	$.ajax({url: vdurl,type: 'GET',complete: function(response) {
 					if(response.status != 200) {//测试链接通信状态
-						$("#msg").html("媒体数据通信失败,正在重新加载，请稍候！");
-						layer.msg('媒体数据通信失败,正在重新加载，请稍候！', {icon: 16,shadeClose: true,});
+						$("#msg").html("Source media failed to reach, reloading!");
+						layer.msg('Failed to reach source media, reloading!', {icon: 16,shadeClose: true,});
 						pass();
 					}else{
 						layer.closeAll();
@@ -287,7 +287,7 @@ function players() {
                             $("#texts").hide();
                         }
 						$("#love_btn").show();
-		                $("#msg").html("数据正常加载完毕，执行播放事件中！");
+		                $("#msg").html("Data load completed. Playing!");
 		                player.play();
 		                vdurl_arr.unshift(vdurl);
 		                console.log(vdurl_arr);
@@ -295,7 +295,7 @@ function players() {
 				}});
             }
         } else {
-        	$("#msg").html("读取失败，正在重新发起请求，请稍候！");
+        	$("#msg").html("Failed load. Request it again. Please wait!");
             pass();
         }
     });
