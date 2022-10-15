@@ -1,7 +1,7 @@
 # XJJ - Dancing Girls TikTok Style Video Site
 ![XJJ](https://p.51sec.org/file/netsec/2022/10/logo.png "Logo")
 
-Whole source code has been mostly forked and translated from this repository: JMWpower/xiaojiejie.
+This repository is forked, modified and translated from a original Chinese repository: JMWpower/xiaojiejie. 
 
 This source code is written by php + html, and it is much simple and easy to deploy if you want to have a similar site. 
 
