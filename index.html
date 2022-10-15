@@ -1,10 +1,3 @@
-<!--
-	By:JmwPower
-	Copy:https://github.com/JMWpower/xiaojiejie
-	Copy:https://gitee.com/JmwPower/xiaojiejie
-	温馨提示：本页面仅供学习参考，请勿分享传播商用，请您在下载后的24H进行删除！本项目开源，请勿在源码分享站点付费下载。
-	以上信息使用时请保留，谢谢！Thanks♪(･ω･)ﾉ
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -96,8 +89,8 @@ video::-webkit-media-controls-panel {
     </div>
 
     <div id="texts" style="color:#ffffff;">
-        <span style="position:absolute;bottom:42px;left:10px;;font-size:1.25rem;" id="userid">@Jmw`Power</span>
-        <span style="position:absolute;bottom:5px;left:10px;font-size:9px;">51sec.org<br> http://xjj.51sec.org<br><span style="color:red;font-size:6px;" id="msg">JMW-|-正在努力加载环境中，请稍候！</span></span>
+        <span style="position:absolute;bottom:42px;left:10px;;font-size:1.25rem;" id="userid">@51Sec</span>
+        <span style="position:absolute;bottom:5px;left:10px;font-size:9px;">51sec.org<br> http://xjj.51sec.org<br><span style="color:red;font-size:6px;" id="msg">51sec-|-Loading enviroment, please wait！</span></span>
     </div>
 
     <span style="position:absolute;top:5px;right:10px;font-family:electronicFont;color:#fff;font-size:1.2rem;" id="time">00:00:00</span>
@@ -121,7 +114,7 @@ video::-webkit-media-controls-panel {
 $(document).ready(function(){
     setInterval('var hour = new Date().getHours();var minutes = new Date().getMinutes();var seconds = new Date().getSeconds();if( hour < 10 ){ hour = "0"+hour; }if( minutes < 10 ){ minutes = "0"+minutes; }if( seconds < 10 ){ seconds = "0"+seconds; }$("#time").html(hour+":"+minutes+":"+seconds);', 1000);
     setTimeout(function(){$("#msgs").hide();},10000);
-	layer.msg('加载环境中，请稍候！');
+	layer.msg('Loading environment, please wait');
     auto = false;//循环播放模式
     textstf = true;//用户信息显示状态
     gi = 1;//初始化GET链接序号
@@ -133,7 +126,7 @@ $(document).ready(function(){
     player = document.getElementById("player");
     players();
     layer.msg('Load media, click to start playing', {
-	    btn: ['Enter fullscreen', '就这样看'],yes:function(){
+	    btn: ['Fullscreen', 'Watch Like this'],yes:function(){
 	    	toggleFullScreen();layer.closeAll();player.play();
 	    }
 	});
@@ -142,7 +135,7 @@ $(document).ready(function(){
     if (user != null) {
         $("#userid").html('@'+user);
     } else {
-        $("#userid").html('@Jmw-Power');
+        $("#userid").html('@51Sec');
     }
     //播放结束事件
 	player.onended = function() {
@@ -150,7 +143,7 @@ $(document).ready(function(){
 	        player.play();
 	    } else {//播放结束，重新获取数据！
 	        pass();
-	        $("#msg").html("播放完毕，正在重新加载中，请稍候！");
+	        $("#msg").html("Completed play, reloading, pelase wait!");
 	    }
 	}
 });
@@ -183,7 +176,7 @@ $("#userid").on("click", function(){
     	login();
     } else {
         $.removeCookie('user'); //删除cookie
-        $("#userid").html("@Jmw-Power");
+        $("#userid").html("@51Sec");
         layer.msg("亲，您已退出登录了哟！", {icon: 0});
     }
 });
