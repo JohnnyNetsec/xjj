@@ -26,7 +26,7 @@ Docker image site: https://hub.docker.com/repository/docker/johnyan2/xjj
 # Demo Photos
 
 ***PC：***
-![PC](https://ftp.bmp.ovh/imgs/2020/06/a9ad98cf11fcf815.png "PC")
+![PC](https://p.51sec.org/file/netsec/2022/10/MobaXterm_G0dt5dBwfp.png "PC")
 
 ***Mobile：***
 ![Mobile](https://ftp.bmp.ovh/imgs/2020/06/e6b0848986829db1.jpg "Mobile")
