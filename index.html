@@ -187,7 +187,7 @@ $("#yuan").on("click", function(){
 		gi++;
 		this.innerText = "Source 0" + gi;//置播放源名称
 		if (gi>9) {this.innerText = "Source 0" + gi;}//大于9，缺省0
-        if (gi==2) {this.innerText = "JSON";}//自定义名称
+        if (gi==2) {this.innerText = "Source JSON";}//自定义名称
         if (user != null) {//登录状态,添加USER信息鉴权
 			url = "./get/get" + gi + ".php?user=" + user;
 		} else {//非登录状态
@@ -199,7 +199,7 @@ $("#yuan").on("click", function(){
 			this.innerText = "收藏";
 		} else {//非登录状态，显示推荐源
 			gi = 1;url = "./get/get" + gi + ".php";
-    		this.innerText = "Source 001";
+    		this.innerText = "Source 01";
 		}
 	}
 });
