@@ -1,21 +1,30 @@
 # XJJ - Dancing Girls TikTok Style Video Site
 ![XJJ](https://p.51sec.org/file/netsec/2022/10/logo.png "Logo")
 
-Source Code for video player pages which is trying to make you to watch those girl dancing video simpler and easier over the Internet. 
+Whole source code has been mostly forked and translated from this repository: JMWpower/xiaojiejie.
 
-Whole source code has been translated from this repository: JMWpower/xiaojiejie.
-
-------------
-
-It includes a Web Gui for PC and Mobile devices. 
+This source code is written by php + html, and it is much simple and easy to deploy if you want to have a similar site. 
 
 ------------
 
-## XJJ -
+It includes web pages for PC and Mobile devices. 
+
+------------
+
+## XJJ Deployment - PHP Website
+
+Copy all files to a php support website folder. 
+
+
+
+## XJJ Deployment - Docker
+Pull docker image and run it directly
+
 Docker image: johnyan2/xjj
 
 Docker image site: https://hub.docker.com/repository/docker/johnyan2/xjj
 
+Default port is tcp 8080. You might need to map it to 80 or using a reverse proxy such as (Nginx proxy manager) to proxy it. 
 
 ------------
 
