@@ -75,7 +75,7 @@ Double click for fullscreen
 ![PC](https://p.51sec.org/file/netsec/2022/10/MobaXterm_G0dt5dBwfp.png "PC")
 
 ***Mobile：***
-![Mobile](https://ftp.bmp.ovh/imgs/2020/06/e6b0848986829db1.jpg "Mobile")
+![Mobile]([https://ftp.bmp.ovh/imgs/2020/06/e6b0848986829db1.jpg](https://p.51sec.org/file/netsec/2022/10/chrome_0soE44A7t4.png) "Mobile")
 
 
 ![XJJ](https://p.51sec.org/file/netsec/2022/10/round%20corner%20xjj%20logo.png "Logo")
