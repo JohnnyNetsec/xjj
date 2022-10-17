@@ -36,15 +36,10 @@ Default port is tcp 8080. You might need to map it to 80 or using a reverse prox
 Because of SSL compatibility for Source 3&4, please visit http://xjj.51sec.org from Edge or using private / incoginto mode.
 
 1.Click【PASS】to start or Next
-
 2.Click heart to add to favorite
-
 3.Click Source Button to Switch
-
 4.Click Video to Play/Pause
-
 5.Toggle [Auto Next] [Loop]
-
 6.Double Click Full Screen
 
 
