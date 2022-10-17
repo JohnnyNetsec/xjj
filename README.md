@@ -31,6 +31,42 @@ Default port is tcp 8080. You might need to map it to 80 or using a reverse prox
 # Demo
 <http://xjj.51sec.org>
 
+## Website Usage
+
+Because of SSL compatibility for Source 3&4, please visit http://xjj.51sec.org from Edge or using private / incoginto mode.
+
+1.Click【PASS】to start or Next
+
+2.Click heart to add to favorite
+
+3.Click Source Button to Switch
+
+4.Click Video to Play/Pause
+
+5.Toggle [Auto Next] [Loop]
+
+6.Double Click Full Screen
+
+
+## Mobile site usage
+Toggle【Auto】/【Loop】
+
+Swipe right to show tips
+
+Swipe left to hide tips
+
+Swipe up for next
+
+Swipe down for last
+
+Click Source to change
+
+Click heart to add favorite
+
+Click to play/pause/span>
+
+Double click for fullscreen
+
 ------------
 
 # Demo Photos
